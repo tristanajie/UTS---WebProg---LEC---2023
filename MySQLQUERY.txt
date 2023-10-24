@@ -1,0 +1,32 @@
+mysql -u root
+
+CREATE DATABASE restoran;
+
+USE restoran;
+
+
+
+CREATE TABLE user (username VARCHAR(50) NOT NULL, first_name VARCHAR(50) NOT NULL, last_name VARCHAR(50),
+password VARCHAR(100) NOT NULL, role VARCHAR(5) NOT NULL, birth_date DATE NOT NULL, jenis_kelamin VARCHAR(9) NOT NULL,
+PRIMARY KEY (username)):
+
+CREATE TABLE loggedinuser(username VARCHAR(50) NOT NULL, FOREIGN KEY (username) REFERENCES user(username));
+
+CREATE TABLE produk (produk VARCHAR(50) NOT NULL, harga INTEGER NOT NULL, PRIMARY KEY (produk));
+
+CREATE TABLE cart (produk VARCHAR(50) NOT NULL, harga INTEGER NOT NULL, FOREIGN KEY (produk) REFERENCES produk(produk));
+
+
+
+
+INSERT INTO produk (produk, harga)
+VALUES
+('Air Mineral', 5000),
+('Burger', 25000),
+('Kopi', 12000),
+('Mie Goreng', 20000),
+('Nasi Goreng', 20000),
+('Sate Ayam', 18000),
+('Soda', 12000),
+('Teh', 10000);
+

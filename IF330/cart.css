@@ -1,0 +1,113 @@
+/* Reset default margin and font family */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+/* Style for tables */
+table {
+  width: 50%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #bbbbbb;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+/* Table headers */
+th {
+  background-color: #939393;
+  color: white;
+}
+
+/* Total table */
+table.total-table {
+  width: 20%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Total table header */
+table.total-table th {
+  background-color: #7b7b7b;
+  color: #333;
+}
+
+/* Total value cell */
+table.total-table td {
+  font-weight: bold;
+}
+
+/* Style for the top navigation bar */
+.topnav {
+  margin-bottom: 3cm;
+  overflow: hidden;
+  background-color: rgb(42, 42, 42);
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgba(60, 60, 60, 0.538);
+  color: rgb(135, 135, 135);
+}
+
+.topnav a.active {
+  background-color: #28282871;
+  color: rgb(169, 169, 169);
+}
+
+.button-container {
+  text-align: center;
+}
+
+#hapusbutton {
+  margin: 10px;
+  background-color: rgb(200, 0, 0);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px 25px;
+}
+
+#hapusbutton:hover {
+  background-color: #9a0000;
+}
+
+#backbutton {
+  background-color: rgb(95, 95, 95);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px 25px;
+}
+
+#backbutton:hover {
+  background-color: #3c3c3c;
+}
+
+#pesanbutton {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px 25px;
+}
+
+#pesanbutton:hover {
+  background-color: #545454;
+}
